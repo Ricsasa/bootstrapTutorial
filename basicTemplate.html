@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>My bootstrap first real lessons :P</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <style>
+      .imageClip{
+         width:60%;
+         height: auto;
+         overflow:hidden;
+      } 
+      .thumbnail_container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        margin-bottom:20px;
+      }
+      .thumbnail {
+        position:absolute;
+        width:100%;
+        height:100%;
+      }
+      .thumbnail img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }        
+
+
+      /* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  padding-top: 70px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 60px;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+      </style>
+</head>
+<body>
+<nav class="navbar-wrapper navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Vacation Rentals</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-star"></span> Top Destinations</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> About Us<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Company Details</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search"/>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span> Book Tickets</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-info-sign"></span> Reservation<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Cancel</a></li>
+                  <li><a href="#">Confirm</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+        </nav>
+      
+      <div class="container">
+         <div class="jumbotron">
+            <h1>Best vacation rentals</h1>
+            <p>Sed placerat bla bla noseque</p>
+            <a class="btn btn-primary btn-lg">Start now!</a>
+         </div>
+      </div>
+      
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4 col-sm-4">
+               <div class="thumbnail_container">
+                  <div class="thumbnail">
+                           <a href="#"><img class="img-responsive img-rounded imageClip" src="images/arduino.jpg"/></a>
+                  </div>
+               </div>
+               <h3 class="text-center">Type 1</h3>
+               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+               <a href="#" class="btn btn-success">Book Now!!</a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                              <div class="thumbnail_container">
+                  <div class="thumbnail">
+               <a href="#"><img class="img-responsive img-rounded imageClip" src="images/androidios.png"/></a>
+                  </div>
+                              </div>
+               <h3 class="text-center">Type 2</h3>
+               <p> Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate</p>
+               <a href="#" class="btn btn-success">Book Now!!</a>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="thumbnail_container">
+                  <div class="thumbnail">
+                    <a href="#"><img class="img-responsive img-rounded imageClip" src="images/nodejs.png"/></a>
+                  </div>
+                </div>
+                <h3 class="text-center">Type 3</h3>
+               <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+               <a href="#" class="btn btn-success">Book Now!!</a>
+            </div>
+         </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-4">&copy; 2015</div>
+          <div class="col-md-4">
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">About Us</a></li>
+              <li><a href="#">Support 24x7</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="text-right">Vacation Rentals</h3>
+          </div>
+        </div>
+        </div>
+      </footer>
+         
+</body>
+</html>
